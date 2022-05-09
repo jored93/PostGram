@@ -1,11 +1,11 @@
 # PostGram
  simple dotnet app consuming jsonplaceholder api
  
- --Create project
+ --Create project:
  dotnet new mvc -au None -o <app_name>
  
- --Reload app
+ --Reload app:
  dotnet restore
  
- --Run app
+ --Run app:
  dotnet run
