@@ -1,0 +1,22 @@
+﻿@using System.Data;
+@model System.Data.DataTable
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <div class="row">
+        
+            @foreach (DataRow row in Model.Rows)
+            {
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="@row["url"]" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">@row["title"]</p>
+                        </div>
+                    </div>
+                </div>
+            }
+    </div>
+</div>
